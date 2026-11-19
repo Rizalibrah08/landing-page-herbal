@@ -3,70 +3,320 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herbal AI Customer Service</title>
-  <meta name="description" content="Landing page proyek chatbot customer service berbasis AI untuk industri maklon herbal.">
+  <title>Tech Zal — Jasa pembuatan website</title>
+  <meta name="description" content="Tech Zal membuat website untuk bisnis: profil perusahaan, landing page, dan toko online, dari rancangan sampai tayang.">
+  <meta name="theme-color" content="#131133">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero">
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+
+  <header class="masthead">
     <div class="container">
-      <span class="badge">Proyek Akademik & Pengembangan Sistem</span>
-      <h1>Herbal AI Customer Service</h1>
-      <p>
-        Sistem chatbot WhatsApp berbasis AI untuk membantu menjawab pertanyaan umum
-        customer service pada industri maklon herbal.
-      </p>
-      <a class="btn" href="#tentang">Pelajari Lebih Lanjut</a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="Tech Zal, beranda">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="#ffc857"/>
+            <path d="M10 10.500h12L10 21.500h12" fill="none" stroke="#131133" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Tech Zal</span>
+        </a>
+        <div class="nav-links">
+          <a href="#layanan">Layanan</a>
+          <a href="#cara-kerja">Cara kerja</a>
+          <a href="#tanya-jawab">Tanya jawab</a>
+        </div>
+        <a class="button button-ghost button-compact" href="#kontak">Hubungi kami</a>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-copy">
+          <h1 class="display">Website bisnis Anda, dirancang dan dibangun sampai tayang.</h1>
+          <p class="lede">
+            Tech Zal membuat profil perusahaan, landing page, dan toko online.
+            Atur contohnya untuk melihat bentuk website yang Anda butuhkan.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#kontak">Ceritakan kebutuhan Anda</a>
+            <a class="button button-ghost" href="#layanan">Lihat layanan</a>
+          </div>
+        </div>
+
+        <div class="demo" data-demo>
+          <div class="controls">
+            <fieldset class="control">
+              <legend>Jenis website</legend>
+              <div class="segmented">
+                <label><input type="radio" name="demo-jenis" id="jenis-profil" value="Profil perusahaan" checked><span>Profil perusahaan</span></label>
+                <label><input type="radio" name="demo-jenis" id="jenis-landing" value="Landing page"><span>Landing page</span></label>
+                <label><input type="radio" name="demo-jenis" id="jenis-toko" value="Toko online"><span>Toko online</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="control">
+              <legend>Warna</legend>
+              <div class="swatches">
+                <label><input type="radio" name="demo-warna" id="warna-indigo" aria-label="Indigo" checked><span style="--swatch:#5750e6"></span></label>
+                <label><input type="radio" name="demo-warna" id="warna-hijau" aria-label="Hijau"><span style="--swatch:#1f9d6b"></span></label>
+                <label><input type="radio" name="demo-warna" id="warna-koral" aria-label="Koral"><span style="--swatch:#f0643c"></span></label>
+                <label><input type="radio" name="demo-warna" id="warna-emas" aria-label="Emas"><span style="--swatch:#e0a100"></span></label>
+              </div>
+            </fieldset>
+            <fieldset class="control">
+              <legend>Layar</legend>
+              <div class="segmented">
+                <label><input type="radio" name="demo-layar" id="layar-desktop" checked><span>Desktop</span></label>
+                <label><input type="radio" name="demo-layar" id="layar-ponsel"><span>Ponsel</span></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="stage">
+            <div class="window" role="img" aria-label="Pratinjau tata letak contoh website">
+              <div class="window-bar">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-address"></span>
+              </div>
+              <div class="window-body">
+                <div class="mock mock-profil">
+                  <div class="mock-row">
+                    <span class="piece piece-logo" style="--i:0"></span>
+                    <span class="piece piece-link piece-push" style="--i:1"></span>
+                    <span class="piece piece-link" style="--i:1"></span>
+                    <span class="piece piece-chip" style="--i:2"></span>
+                  </div>
+                  <div class="mock-main">
+                    <div class="mock-stack">
+                      <span class="piece piece-head" style="--i:3"></span>
+                      <span class="piece piece-head piece-head-short" style="--i:4"></span>
+                      <span class="piece piece-text" style="--i:5"></span>
+                      <span class="piece piece-text piece-text-short" style="--i:5"></span>
+                      <span class="piece piece-cta" style="--i:7"></span>
+                    </div>
+                    <span class="piece piece-art" style="--i:6"></span>
+                  </div>
+                  <div class="mock-tiles">
+                    <span class="piece piece-tile" style="--i:8"></span>
+                    <span class="piece piece-tile piece-soft" style="--i:9"></span>
+                    <span class="piece piece-tile" style="--i:10"></span>
+                  </div>
+                </div>
+
+                <div class="mock mock-landing">
+                  <div class="mock-row">
+                    <span class="piece piece-logo" style="--i:0"></span>
+                    <span class="piece piece-chip piece-push" style="--i:1"></span>
+                  </div>
+                  <div class="mock-center">
+                    <span class="piece piece-head" style="--i:2; width:82%"></span>
+                    <span class="piece piece-head" style="--i:3; width:54%"></span>
+                    <span class="piece piece-text" style="--i:4; width:62%"></span>
+                    <span class="piece piece-cta" style="--i:5; width:128px; height:36px"></span>
+                  </div>
+                  <span class="piece piece-band" style="--i:6"></span>
+                  <div class="mock-tiles">
+                    <span class="piece piece-tile" style="--i:7"></span>
+                    <span class="piece piece-tile" style="--i:8"></span>
+                    <span class="piece piece-tile" style="--i:9"></span>
+                  </div>
+                </div>
+
+                <div class="mock mock-toko">
+                  <div class="mock-row">
+                    <span class="piece piece-logo" style="--i:0"></span>
+                    <span class="piece piece-link piece-push" style="--i:1"></span>
+                    <span class="piece piece-link" style="--i:1"></span>
+                    <span class="piece piece-chip" style="--i:2"></span>
+                  </div>
+                  <div class="mock-tiles">
+                    <span class="mock-product"><span class="piece piece-photo" style="--i:3"></span><span class="piece piece-text" style="--i:4"></span><span class="piece piece-price" style="--i:4"></span></span>
+                    <span class="mock-product"><span class="piece piece-photo" style="--i:4"></span><span class="piece piece-text" style="--i:5"></span><span class="piece piece-price" style="--i:5"></span></span>
+                    <span class="mock-product"><span class="piece piece-photo" style="--i:5"></span><span class="piece piece-text" style="--i:6"></span><span class="piece piece-price" style="--i:6"></span></span>
+                    <span class="mock-product"><span class="piece piece-photo" style="--i:6"></span><span class="piece piece-text" style="--i:7"></span><span class="piece piece-price" style="--i:7"></span></span>
+                    <span class="mock-product"><span class="piece piece-photo" style="--i:7"></span><span class="piece piece-text" style="--i:8"></span><span class="piece piece-price" style="--i:8"></span></span>
+                    <span class="mock-product"><span class="piece piece-photo" style="--i:8"></span><span class="piece piece-text" style="--i:9"></span><span class="piece piece-price" style="--i:9"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-foot">
+            <p class="demo-note demo-note-profil">Profil perusahaan memperkenalkan bisnis Anda: siapa Anda, apa layanannya, dan cara menghubungi.</p>
+            <p class="demo-note demo-note-landing">Landing page adalah satu halaman dengan satu tujuan: pengunjung menghubungi Anda atau mengisi formulir.</p>
+            <p class="demo-note demo-note-toko">Toko online menampilkan katalog produk, lengkap dengan keranjang dan alur pemesanan.</p>
+            <a class="button button-ghost button-compact" href="#kontak" data-carry>Pesan website ini</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section id="tentang" class="section">
+  <main id="konten">
+    <section id="layanan" class="band" aria-labelledby="judul-layanan">
       <div class="container">
-        <h2>Tentang Proyek</h2>
-        <p>
-          Proyek ini dikembangkan untuk kebutuhan akademik dan pengembangan sistem
-          customer service berbasis AI. Sistem dirancang untuk membantu menjawab
-          pertanyaan umum seperti minimum order quantity (MOQ), paket layanan,
-          perizinan, profil perusahaan, dan alur pendaftaran maklon.
-        </p>
+        <div class="band-head">
+          <h2 id="judul-layanan" class="title">Tiga jenis website yang kami buat</h2>
+          <p class="prose">
+            Pilih yang paling dekat dengan kebutuhan Anda. Kalau belum yakin,
+            kami bantu menentukannya saat diskusi.
+          </p>
+        </div>
+        <ul class="services">
+          <li class="service">
+            <h3>Profil perusahaan</h3>
+            <p>Website beberapa halaman yang membuat calon pelanggan mengenal dan memercayai bisnis Anda.</p>
+            <ul class="tags" aria-label="Isi profil perusahaan">
+              <li>Tentang kami</li>
+              <li>Layanan</li>
+              <li>Kontak</li>
+            </ul>
+          </li>
+          <li class="service">
+            <h3>Landing page</h3>
+            <p>Satu halaman untuk satu penawaran, disusun agar pengunjung langsung menghubungi Anda.</p>
+            <ul class="tags" aria-label="Isi landing page">
+              <li>Penawaran utama</li>
+              <li>Formulir</li>
+              <li>Tombol hubungi</li>
+            </ul>
+          </li>
+          <li class="service">
+            <h3>Toko online</h3>
+            <p>Katalog produk yang rapi, dengan keranjang dan alur pemesanan yang mudah diikuti.</p>
+            <ul class="tags" aria-label="Isi toko online">
+              <li>Katalog produk</li>
+              <li>Keranjang</li>
+              <li>Pemesanan</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="container grid">
-        <div class="card">
-          <h3>WhatsApp Integration</h3>
-          <p>Menghubungkan customer dengan sistem melalui WhatsApp Business API.</p>
+    <section id="cara-kerja" class="band band-tint" aria-labelledby="judul-cara-kerja">
+      <div class="container">
+        <div class="band-head">
+          <h2 id="judul-cara-kerja" class="title">Dari obrolan pertama sampai website tayang.</h2>
         </div>
-        <div class="card">
-          <h3>AI & RAG</h3>
-          <p>Menggunakan Retrieval-Augmented Generation untuk menjawab berdasarkan informasi yang telah disiapkan.</p>
+        <ol class="steps">
+          <li class="step">
+            <h3>Diskusi kebutuhan</h3>
+            <p>Kami memahami bisnis Anda, pengunjung yang dituju, dan tujuan websitenya.</p>
+          </li>
+          <li class="step">
+            <h3>Rancangan</h3>
+            <p>Susunan halaman dan tampilan disepakati sebelum website mulai dibangun.</p>
+          </li>
+          <li class="step">
+            <h3>Pembuatan</h3>
+            <p>Website dibangun bertahap, dan Anda melihat hasilnya di setiap tahap.</p>
+          </li>
+          <li class="step">
+            <h3>Tayang dan dukungan</h3>
+            <p>Website diluncurkan, lalu kami bantu perbaikan dan perubahan sesudahnya.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="tanya-jawab" class="band" aria-labelledby="judul-tanya-jawab">
+      <div class="container">
+        <div class="band-head">
+          <h2 id="judul-tanya-jawab" class="title">Yang sering ditanyakan</h2>
         </div>
-        <div class="card">
-          <h3>Customer Service</h3>
-          <p>Difokuskan pada pertanyaan umum dan informasi layanan, bukan konsultasi medis.</p>
+        <div class="faq">
+          <details>
+            <summary>
+              Berapa lama pembuatan sebuah website?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>
+            </summary>
+            <p>Tergantung jenis dan jumlah halamannya. Setelah diskusi kebutuhan, kami beri perkiraan waktu sebelum pekerjaan dimulai.</p>
+          </details>
+          <details>
+            <summary>
+              Berapa biayanya?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>
+            </summary>
+            <p>Biaya mengikuti lingkup pekerjaan. Ceritakan kebutuhan Anda lewat formulir di bawah, lalu kami kirim penawarannya.</p>
+          </details>
+          <details>
+            <summary>
+              Apakah websitenya nyaman dibuka di ponsel?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>
+            </summary>
+            <p>Ya. Setiap website kami rancang untuk layar ponsel lebih dulu, lalu disesuaikan untuk layar besar.</p>
+          </details>
+          <details>
+            <summary>
+              Saya belum punya teks dan foto. Bisa tetap mulai?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>
+            </summary>
+            <p>Bisa. Kita mulai dari susunan halaman, dan isinya menyusul selama pembuatan.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Kontak</h2>
-        <p><strong>Nama:</strong> Muhammad Rizal Ibrahim</p>
-        <p><strong>Email:</strong> rizalibrah2018@gmail.com</p>
-        <p><strong>Negara:</strong> Indonesia</p>
-        <p class="note">
-          Catatan: Silakan sesuaikan informasi di atas apabila website ini nantinya
-          digunakan atas nama perusahaan/organisasi tertentu.
-        </p>
+    <section id="kontak" class="band band-dark" aria-labelledby="judul-kontak">
+      <div class="container contact">
+        <div>
+          <h2 id="judul-kontak" class="title">Ceritakan website yang Anda butuhkan.</h2>
+          <p class="lede">
+            Isi formulirnya, lalu aplikasi email Anda terbuka dengan pesan yang
+            sudah tersusun. Anda tinggal mengirimnya.
+          </p>
+          <dl class="contact-list">
+            <div class="contact-row">
+              <dt>Nama</dt>
+              <dd>Muhammad Rizal Ibrahim</dd>
+            </div>
+            <div class="contact-row">
+              <dt>Email</dt>
+              <dd><a href="mailto:rizalibrah2026@gmail.com">rizalibrah2026@gmail.com</a></dd>
+            </div>
+            <div class="contact-row">
+              <dt>Negara</dt>
+              <dd>Indonesia</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="brief" data-brief data-to="rizalibrah2026@gmail.com" action="mailto:rizalibrah2026@gmail.com" method="post" enctype="text/plain" novalidate>
+          <fieldset>
+            <legend>Jenis website</legend>
+            <div class="chips">
+              <label><input type="radio" name="jenis" value="Profil perusahaan" checked><span>Profil perusahaan</span></label>
+              <label><input type="radio" name="jenis" value="Landing page"><span>Landing page</span></label>
+              <label><input type="radio" name="jenis" value="Toko online"><span>Toko online</span></label>
+              <label><input type="radio" name="jenis" value="Belum tahu"><span>Belum tahu</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="brief-nama">Nama Anda</label>
+            <input id="brief-nama" name="nama" type="text" autocomplete="name" required aria-describedby="brief-nama-error" data-empty="Isi nama Anda.">
+            <p class="field-error" id="brief-nama-error"></p>
+          </div>
+          <div class="field">
+            <label for="brief-pesan">Kebutuhan Anda</label>
+            <textarea id="brief-pesan" name="pesan" required aria-describedby="brief-pesan-error" data-empty="Tulis sedikit tentang website yang Anda butuhkan."></textarea>
+            <p class="field-error" id="brief-pesan-error"></p>
+          </div>
+          <button class="button button-indigo" type="submit">Tulis email</button>
+          <p class="brief-status" role="status" data-status></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-content">
-      <span>© 2026 Herbal AI Customer Service</span>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Tech Zal</span>
       <a href="privacy.html">Kebijakan Privasi</a>
     </div>
   </footer>

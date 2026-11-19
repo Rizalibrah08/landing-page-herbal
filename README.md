@@ -4,11 +4,12 @@
 - `index.html` — halaman utama
 - `privacy.html` — kebijakan privasi
 - `styles.css` — tampilan website
+- `script.js` — formulir kontak dan contoh website interaktif
 
 ## Cara publish lewat GitHub Pages
 1. Buat akun GitHub jika belum punya.
 2. Buat repository baru, misalnya: `herbal-ai-cs`.
-3. Upload ketiga file ini ke repository.
+3. Upload semua file ini ke repository.
 4. Buka **Settings → Pages**.
 5. Pada **Build and deployment**, pilih **Deploy from a branch**.
 6. Pilih branch **main** dan folder **/(root)**.
